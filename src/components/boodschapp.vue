@@ -24,7 +24,7 @@
           <div :class="{afgestreept: boodschap.afgestreept}" class="lijstProduct" >{{boodschap.product}}</div>
         </div>
         <v-btn class="btndelete" v-on:click="deleteProduct(boodschap)">
-          <v-icon dark right>delete_outline</v-icon>
+          <v-icon color="red"  dark right>delete_outline</v-icon>
         </v-btn>
         <hr />
       </div>
@@ -167,22 +167,28 @@
 
   }
   .aantalProduct{
-  width:3em;
+  width:3.5em;
+  padding:0.2em;
   border:1px solid;
   height:2em;
+  margin-left:0.5em;
   }
   .boodschappenlijst{
   position:relative;
   margin:auto;
   margin-top:2.5em;
   border: 1px solid #81a0d1;
+  border-radius: 15px 15px 0 0;
   width: 80%;
   min-width:20em;
   max-width: 30em;
+  margin-bottom:2em;
   }
   .lijstHeader{
-
+  font-size: 2em;
+  color:#fff;
   background:#81a0d1;
+  border-radius: 15px 15px 0 0;
   }
   .boodschap{
   text-align: left;
@@ -211,15 +217,17 @@
   display: inline-block;
   margin-right:0em;
   height: 1.8em;
+  width:1em !important;
   }
   .totaal{
-  
+
   display:inline-block;
   height: 2em;
   width: calc(70% - 1.2em);
   border:1 px red solid;
   }
   .nieuwProduct{
+  padding:0.2em;
   border: 1px solid;
   height:2em;
   }
